@@ -1,0 +1,10 @@
+{
+	"nav": {
+		"about": "About",
+		"projects": "Projects",
+		"fun": "Fun projects"
+	},
+	"sections": {
+		"about": "About me"
+	}
+}
