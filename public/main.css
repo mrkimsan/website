@@ -5,6 +5,7 @@
 	--text: #191919;
 	--textSecondary: #686d71;
 	--theme: #457461;
+	--themeDark: #3E6857;
 }
 
 body {
@@ -52,9 +53,7 @@ header .title {
 .hero {
 	width: 100%;
 	padding: 50px 0;
-	/* background: var(--theme); */
-	background-color: var(--theme);
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+	background-image: linear-gradient(to right, var(--themeDark) calc(100% - 500px), transparent calc(100% - 500px)), radial-gradient(circle at calc(100% - 400px), var(--themeDark) 200px, var(--theme) 200px, var(--theme) 100%);
 	color: white;
 	position: relative;
 	overflow: hidden;
@@ -62,26 +61,6 @@ header .title {
 .hero:after, .hero:before {
 	content: "";
 	display: block;
-}
-.hero:after {
-	height: 600px;
-	width: 600px;
-	border-radius: 50%;
-	/* background: rgba(0, 0, 0, 0.1); */
-	background: var(--theme);
-	position: absolute;
-	right: 250px;
-	top: 50%;
-	transform: translateY(-50%);
-	z-index: 4;
-}
-.hero:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: calc(100% - 300px);
-	height: 100%;
-	background: var(--theme);
 }
 
 
