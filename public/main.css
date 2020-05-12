@@ -53,14 +53,10 @@ header .title {
 .hero {
 	width: 100%;
 	padding: 50px 0;
-	background-image: linear-gradient(to right, var(--themeDark) calc(100% - 500px), transparent calc(100% - 500px)), radial-gradient(circle at calc(100% - 400px), var(--themeDark) 200px, var(--theme) 200px, var(--theme) 100%);
+	background-image: 
+	  linear-gradient(to right, var(--themeDark) calc(100% - 500px), transparent calc(100% - 500px)), 
+	  radial-gradient(circle at calc(100% - 400px), var(--themeDark) 200px, var(--theme) 200px, var(--theme) 100%);
 	color: white;
-	position: relative;
-	overflow: hidden;
-}
-.hero:after, .hero:before {
-	content: "";
-	display: block;
 }
 
 
