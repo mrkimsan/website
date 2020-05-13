@@ -13,8 +13,8 @@
 	body {
 		--body: #191919;
 		--text: white;
-		--textSecondary: #4c4c4c;
-		--border: var(--textSecondary);
+		--textSecondary: #b5b5b5;
+		--border: #4c4c4c;
 		--theme: #5855ff;
 		--themeDark: #4a47ef;
 	}
@@ -56,12 +56,16 @@ header nav a + a {
 }
 header nav a:hover {
 	text-decoration: underline;
-	color: var(--text);
+	opacity: 1;
 }
 
 .content {
 	width: calc(100% - 90px);
 	max-width: 1300px;
+	margin: 0 auto;
+}
+.subContent {
+	width: calc(100% - 200px);
 	margin: 0 auto;
 }
 

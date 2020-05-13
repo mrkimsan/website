@@ -2,3 +2,27 @@
 .postWrapper .postsSection {
 	margin-top: 300px;
 }
+
+.postMain {
+	margin-top: 80px;
+}
+
+.postImage {
+	width: calc(100% - 2px);
+	border: 1px solid var(--border);
+	height: 200px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+.postImage img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.postContent h1 {
+	margin: 20px 0;
+}
+.postContent p {
+	margin: 10px 0;
+}
