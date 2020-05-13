@@ -10,6 +10,7 @@ app.engine("handlebars", handlebars({
 app.set("view engine", "handlebars");
 
 app.use("/", routers.home);
+app.use("/posts", routers.posts);
 
 app.use(express.static("public"));
 

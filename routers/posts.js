@@ -8,10 +8,10 @@ router.get("/", (req, res) => {
 	let locale = getLocale("us", "en");
 	let posts = getPosts();
 
-	res.render("home", {
+	res.render("posts", {
 		locale,
 		posts,
-		showHero: true
+		showHero: false
 	});
 });
 

@@ -23,6 +23,7 @@ module.exports.getPosts = () => {
 		// If the post is published, start adding relevant data
 		// and also add to the array
 		if(file.state === "published") {
+			file.fileName = fileName;
 			let bodyMd = fs.readFileSync(`${postsPath}/${file.md}`, "utf-8");
 			file.body = {
 				md: bodyMd,
@@ -41,6 +42,8 @@ module.exports.getPosts = () => {
 			posts.push(file);
 		}
 	}
+
+	posts = posts.sort((a, b) => Number(b.fileName.split(".")[0]) - Number(a.fileName.split(".")[0]));
 
 	console.log(posts);
 

@@ -6,6 +6,7 @@
 	},
 	"posts": {
 		"title": "Posts",
+		"recent": "Recent posts",
 		"showAll": "Show all posts..."
 	}
 }

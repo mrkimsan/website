@@ -1,26 +1,12 @@
 <div class="bodyWrapper content">
 	<div class="section postsSection">
 		<h2 class="title spread">
-			<span class="mainTitle">{{ locale.posts.title }}</span>
+			<span class="mainTitle">{{ locale.posts.recent }}</span>
 			<a class="moreLink" href="/posts">{{ locale.posts.showAll }}</a>
 		</h2>
 		<div class="posts oneRow">
 			{{#each posts}}
-			<div class="post">
-				{{#if image}}
-				<div class="postTop">
-					<img src="{{ image }}" alt="blog image">
-				</div>
-				{{/if}}
-				<div class="postContent">
-					<h3 class="postTitle">
-						<a class="postLink" href="#">{{ title }}</a>
-					</h3>
-					<p class="postPreview">
-						{{ body.short }}
-					</p>
-				</div> 
-			</div>
+			{{> post}}
 			{{/each}}
 		</div>
 		

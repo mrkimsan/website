@@ -35,7 +35,7 @@
 	<body>
 		<div class="wrapper">
 			{{> header}}
-			{{> hero}}
+			{{#if showHero}}{{> hero}}{{/if}}
 			{{{ body }}}
 		</div>
 	</body>
