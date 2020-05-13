@@ -5,12 +5,15 @@ const app = express();
 
 
 app.engine("handlebars", handlebars({
-	defaultLayout: "main"
+	defaultLayout: "main",
+	helpers: {
+		toSlug: str => encodeURIComponent(str.replace(/ /g, "-"))
+	}
 }));
 app.set("view engine", "handlebars");
 
 app.use("/", routers.home);
-app.use("/posts", routers.posts);
+app.use("/", routers.posts);
 
 app.use(express.static("public"));
 

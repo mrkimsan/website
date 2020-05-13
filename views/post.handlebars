@@ -1,0 +1,17 @@
+<div class="content postWrapper">
+
+	<link rel="stylesheet" href="/post.css">
+
+	<div class="section postsSection">
+		<h2 class="title spread">
+			<span class="mainTitle">{{ locale.posts.recentOther }}</span>
+			<a class="moreLink" href="/posts">{{ locale.posts.showAll }}</a>
+		</h2>
+		<div class="posts oneRow">
+			{{#each posts}}
+			{{> post}}
+			{{/each}}
+		</div>
+	</div>
+
+</div>
