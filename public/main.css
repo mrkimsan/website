@@ -65,7 +65,8 @@ header nav a:hover {
 	margin: 0 auto;
 }
 .subContent {
-	width: calc(100% - 200px);
+	width: 100%;
+	max-width: 40rem;
 	margin: 0 auto;
 }
 
@@ -203,9 +204,6 @@ header .title a {
 @media screen and (max-width: 700px) {
 	.content {
 		width: calc(100% - 40px);
-	}
-	header nav {
-		display: none;
 	}
 	.hero {
 		padding: 40px 0;

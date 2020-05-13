@@ -5,12 +5,21 @@ const express = require("express");
 const handlebars = require("express-handlebars");
 const app = express();
 
-
 app.engine("handlebars", handlebars({
 	defaultLayout: "main",
 	helpers: {
 		toSlug: str => encodeURIComponent(str.replace(/ /g, "-")),
-		toHTML: str => showdownConverter.makeHtml(str)
+		toHTML: str => showdownConverter.makeHtml(str),
+		getHighlightJs: body => {
+			if(body.includes(`\`\`\``)) { // Awesome check, huh
+				return `
+				  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atelier-plateau-dark.min.css">
+				  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+				  <script>hljs.initHighlightingOnLoad();</script>
+				`
+			}
+			return "";
+		}
 	}
 }));
 app.set("view engine", "handlebars");
