@@ -1,9 +1,4 @@
 {
-	"nav": {
-		"about": "About",
-		"projects": "Projects",
-		"fun": "Fun projects"
-	},
 	"posts": {
 		"title": "Posts",
 		"recent": "Recent posts",
