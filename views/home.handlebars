@@ -5,42 +5,24 @@
 			<a class="moreLink" href="/posts">{{ locale.posts.showAll }}</a>
 		</h2>
 		<div class="posts oneRow">
+			{{#each posts}}
 			<div class="post">
+				{{#if image}}
 				<div class="postTop">
-					<img src="https://i.kym-cdn.com/entries/icons/facebook/000/021/807/ig9OoyenpxqdCQyABmOQBZDI0duHk2QZZmWg2Hxd4ro.jpg" alt="blog image">
+					<img src="{{ image }}" alt="blog image">
 				</div>
+				{{/if}}
 				<div class="postContent">
 					<h3 class="postTitle">
-						<a class="postLink" href="#">The story of how I hacked the entire world</a>
+						<a class="postLink" href="#">{{ title }}</a>
 					</h3>
 					<p class="postPreview">
-						Lorem ipsum dolor sit amet consectetur adipiscing elit odio magna fusce, dis erat pulvinar ornare eu pharetra nascetur montes porttitor fringilla, fermentum leo hac turpis purus id phasellus tincidunt sagittis. Magna proin ultrices nisi eu turpis fames justo odio, nisl semper himenaeos vivamus suspendisse porta vestibulum suscipit dignissim, id ridiculus ligula torquent phasellus eleifend felis. Vestibulum pulvinar euismod faucibus gravida cras suspendisse sagittis congue magnis, dignissim enim condimentum diam ut fermentum primis.
+						{{ body.short }}
 					</p>
 				</div>
 			</div>
+			{{/each}}
 		</div>
-
-
-		<script>
-
-			let sources = [
-				"https://i.kym-cdn.com/entries/icons/facebook/000/021/807/ig9OoyenpxqdCQyABmOQBZDI0duHk2QZZmWg2Hxd4ro.jpg",
-				"https://i.ytimg.com/vi/KEkrWRHCDQU/maxresdefault.jpg",
-				"https://i.redd.it/3m9u41yc0ba41.jpg",
-				"https://images.discordapp.net/avatars/635527435139678228/f2fc5cfe916df1414a7c21b44912f2f6.png?size=512",
-				"https://images-cdn.9gag.com/photo/aXjyKRb_460s.jpg",
-				"https://i.redd.it/3heuxe73zny01.jpg",
-				"https://i.github-camo.com/a19d448426e766468e5ce139692618535817bcf7/68747470733a2f2f636c6f75642e67697468756275736572636f6e74656e742e636f6d2f6173736574732f31363534373036302f32313936343537362f61626232303630632d646234652d313165362d396663302d3165613334663065303736622e706e67"
-			];
-
-			// This is obviously temporary
-			let wrapper = document.querySelector(".posts");
-			for(let i = 0; i < 15; i++) {
-				let node = document.importNode(wrapper.children[0], true);
-				node.querySelector(".postTop img").src = sources[Math.floor(Math.random() * sources.length)];
-				wrapper.appendChild(node);
-			}
-		</script>
 		
 	</div>
 </div>
