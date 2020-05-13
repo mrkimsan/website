@@ -4,7 +4,8 @@
 		"projects": "Projects",
 		"fun": "Fun projects"
 	},
-	"sections": {
-		"about": "About me"
+	"posts": {
+		"title": "Posts",
+		"showAll": "Show all posts..."
 	}
 }

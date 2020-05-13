@@ -8,6 +8,16 @@
 	--themeDark: #3E6857;
 }
 
+@media (prefers-color-scheme: dark) {
+	body {
+		--body: #191919;
+		--text: white;
+		--textSecondary: #4c4c4c;
+		--theme: #5855ff;
+		--themeDark: #4a47ef;
+	}
+}
+
 body {
 	margin: 0;
 	background: var(--body);
@@ -54,9 +64,10 @@ header .title {
 	width: 100%;
 	padding: 50px 0;
 	background-image: 
-	  linear-gradient(to right, var(--themeDark) calc(100% - 500px), transparent calc(100% - 500px)), 
-	  radial-gradient(circle at calc(100% - 400px), var(--themeDark) 200px, var(--theme) 200px, var(--theme) 100%);
+	  linear-gradient(to right, var(--theme) calc(100% - 500px), transparent calc(100% - 500px)), 
+	  radial-gradient(circle at calc(100% - 400px), var(--theme) 200px, var(--themeDark) 200px);
 	color: white;
+	overflow-x: hidden;
 }
 
 
@@ -105,7 +116,78 @@ header .title {
 	text-decoration: underline;
 }
 
+.bodyWrapper {
+	margin-top: 40px;
+}
+
+.section > .title {
+	margin: 0;
+	margin-bottom: 10px;
+}
+.section > .title.spread {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.section > .title .moreLink {
+	font-size: 1rem;
+	text-decoration: none;
+	font-weight: 500;
+	color: var(--textSecondary);
+}
+
+.section > .title .moreLink:hover {
+	text-decoration: underline;
+}
+.posts {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-gap: 20px;
+}
+.posts.oneRow {
+	grid-gap: 0 20px;
+	grid-template-rows: auto;
+	grid-auto-rows: 0;
+	overflow: hidden;
+}
+.post .postTop {
+	width: 100%;
+	height: 100%;
+}
+.post .postTop img {
+	width: 100%;
+	height: 150px;
+	border-radius: 6px;
+	object-fit: cover;
+	border: 1px solid var(--textSecondary);
+}
+.post .postContent {
+	margin-top: 5px;
+}
+.post .postContent .postTitle {
+	margin: 0;
+}
+.post .postContent .postLink {
+	text-decoration: none;
+	color: inherit;
+}
+.post .postContent .postLink:hover {
+	text-decoration: underline;
+}
+.post .postContent .postPreview {
+	margin: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+	color: var(--textSecondary);
+}
+
+
 @media screen and (max-width: 700px) {
+	.content {
+		width: calc(100% - 40px);
+	}
 	header nav {
 		display: none;
 	}
@@ -129,5 +211,8 @@ header .title {
 	}
 	.hero .socialWrapper {
 		display: grid;
+	}
+	.posts {
+		grid-template-columns: 100%;
 	}
 }
