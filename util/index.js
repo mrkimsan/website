@@ -45,8 +45,6 @@ module.exports.getPosts = () => {
 
 	posts = posts.sort((a, b) => Number(b.fileName.split(".")[0]) - Number(a.fileName.split(".")[0]));
 
-	console.log(posts);
-
 	return posts;
 
 }
