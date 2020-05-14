@@ -10,21 +10,21 @@ module.exports.getLocale = (lang, variant) => {
 	return locale || null;
 }
 
-module.exports.getPosts = () => {
+module.exports.getPosts = (category = "blog") => {
 	let posts = [];
-	let postFileNames = fs.readdirSync(postsPath);
+	let postFileNames = fs.readdirSync(postsPath + category);
 
 	postFileNames = postFileNames.filter(name => name.includes(".json"));
 
 	for(let fileName of postFileNames) {
-		let path = `${postsPath}/${fileName}`;
+		let path = `${postsPath}/${category}/${fileName}`;
 		let file = JSON.parse(fs.readFileSync(path, "utf-8"));
 		
 		// If the post is published, start adding relevant data
 		// and also add to the array
 		if(file.state === "published") {
 			file.fileName = fileName;
-			let bodyMd = fs.readFileSync(`${postsPath}/${file.md}`, "utf-8");
+			let bodyMd = fs.readFileSync(`${postsPath}${category}/${file.md}`, "utf-8");
 			file.body = {
 				md: bodyMd,
 				short: bodyMd
@@ -43,9 +43,7 @@ module.exports.getPosts = () => {
 		}
 	}
 
-	posts = posts.sort((a, b) => Number(b.fileName.split(".")[0]) - Number(a.fileName.split(".")[0]));
-
-	console.log(posts);
+	posts = posts.sort((a, b) => b.date - a.date);
 
 	return posts;
 

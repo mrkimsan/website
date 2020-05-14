@@ -21,7 +21,7 @@ router.get("/posts", (req, res) => {
 router.get("/:slug", (req, res, next) => {
 
 	let locale = getLocale("us", "en");
-	let posts = getPosts();
+	let posts = getPosts("blog");
 	let post = posts.find(p => p.slug === req.params.slug);
 
 	if(post) {

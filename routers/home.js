@@ -6,11 +6,13 @@ const router = express.Router();
 router.get("/", (req, res) => {
 
 	let locale = getLocale("us", "en");
-	let posts = getPosts();
+	let posts = getPosts("blog");
+	let projects = getPosts("projects");
 
 	res.render("home", {
 		locale,
 		posts,
+		projects,
 		showHero: true
 	});
 });

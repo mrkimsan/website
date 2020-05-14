@@ -4,5 +4,8 @@
 		"recent": "Recent posts",
 		"recentOther": "More recent posts",
 		"showAll": "Show all posts..."
+	},
+	"projects": {
+		"recent": "Recent projects"
 	}
 }

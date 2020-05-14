@@ -11,4 +11,15 @@
 		</div>
 		
 	</div>
+	<div class="section projectSection">
+		<h2 class="title spread">
+			<span class="mainTitle">{{ locale.projects.recent }}</span>
+		</h2>
+		<div class="posts">
+			{{#each projects}}
+			{{> post}}
+			{{/each}}
+		</div>
+		
+	</div>
 </div>

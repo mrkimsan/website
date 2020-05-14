@@ -136,6 +136,9 @@ header .title a {
 
 .bodyWrapper {
 	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 20px;
 }
 
 .section > .title {
@@ -146,6 +149,7 @@ header .title a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 .section > .title .moreLink {
 	font-size: 1rem;
