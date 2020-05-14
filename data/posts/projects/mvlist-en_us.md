@@ -1,10 +1,11 @@
 # mvlist
 
-This project is a remake of an older site I built before. I was not satisfied with that site, since it had various UX issues, so I built this.
+When I built this, I wanted an easy way to keep track of movies I wanted to watch. This web app provides an easy way to do that, with a watchlist, a view where you can see what movies on your list are upcoming, you can keep track of "up next", and it also shows movies you've recently watched.
 
-This project is built using Node.js, with MongoDB as a database. Express is used as the web server, using express-handlebars as the view engine.
+Apparently, letterboxHD wasn't good enough for me at the time. Awesome.
 
-The project is also available on [GitHub](https://github.com/jipfr/mvlist). Check out the live version at [mvlist.jipfr.nl](mvlist.jipfr.nl)
+The project is also available on [GitHub](https://github.com/jipfr/mvlist). Check out the live version at [mvlist.jipfr.nl](https://mvlist.jipfr.nl)
 
-![Image of my user's page](/assets/projects/mvlist.png)
-![Image of my user's page](/assets/projects/mvlist-1.png)
+![User's feed page](/assets/projects/mvlist.png)
+![User's watchlist](/assets/projects/mvlist-2.png)
+![Movie view](/assets/projects/mvlist-3.png)

@@ -6,6 +6,9 @@
 		"showAll": "Show all posts..."
 	},
 	"projects": {
-		"recent": "Recent projects"
+		"title": "Projects",
+		"recent": "Recent projects",
+		"showAll": "Show all projects",
+		"recentOther": "More recent projects"
 	}
 }

@@ -1,0 +1,30 @@
+<div class="content postWrapper">
+
+	<link rel="stylesheet" href="/post.css">
+
+	{{{getHighlightJs project.body.md}}}
+
+	<div class="postMain">
+		{{#if project.image}}
+		<div class="postImage">
+			<img src="{{ project.image }}" alt="Big hero image">
+		</div>
+		{{/if}}
+		<div class="postContent subContent">
+			{{{toHTML project.body.md}}}
+		</div>
+	</div>
+
+	<div class="section postsSection">
+		<h2 class="title spread">
+			<span class="mainTitle">{{ locale.posts.recentOther }}</span>
+			<a class="moreLink" href="/posts">{{ locale.projects.showAll }}</a>
+		</h2>
+		<div class="posts oneRow">
+			{{#each projects}}
+			{{> post}}
+			{{/each}}
+		</div>
+	</div>
+
+</div>

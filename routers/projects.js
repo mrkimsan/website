@@ -6,14 +6,14 @@ const express = require("express");
 const router = express.Router();
 
 // General overview of all posts
-router.get("/posts", (req, res) => {
+router.get("/projects", (req, res) => {
 
 	let locale = getLocale("us", "en");
-	let posts = getPosts();
+	let projects = getPosts("projects");
 
-	res.render("posts", {
+	res.render("projects", {
 		locale,
-		posts,
+		projects,
 		showHero: false
 	});
 });
@@ -21,14 +21,14 @@ router.get("/posts", (req, res) => {
 router.get("/:slug", (req, res, next) => {
 
 	let locale = getLocale("us", "en");
-	let posts = getPosts("projects");
-	let post = posts.find(p => p.slug === req.params.slug);
+	let projects = getPosts("projects");
+	let project = projects.find(p => p.slug === req.params.slug);
 
-	if(post) {
-		res.render("post", {
+	if(project) {
+		res.render("project", {
 			locale,
-			post,
-			posts: posts.filter(s => s.slug !== post.slug).slice(0, 3),
+			project,
+			projects: projects.filter(s => s.slug !== project.slug).slice(0, 3),
 			showHero: false
 		});
 	} else {
