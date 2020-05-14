@@ -28,7 +28,6 @@ app.set("view engine", "handlebars");
 app.use("/", routers.home);
 app.use("/", routers.posts);
 app.use("/", routers.projects);
-app.use("/icon-gen", routers.iconGen);
 
 app.use(express.static("public"));
 
