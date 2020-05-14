@@ -25,7 +25,7 @@ body {
 	background: var(--body);
 	color: var(--text);
 	font-family: Poppins, Arial, Helvetica, sans-serif;
-	padding-bottom: calc(40px + env(safe-area-inset-bottom));
+	padding-bottom: calc(100px + env(safe-area-inset-bottom));
 }
 
 header {

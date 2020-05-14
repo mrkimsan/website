@@ -13,7 +13,7 @@ app.engine("handlebars", handlebars({
 		getHighlightJs: body => {
 			if(body.includes(`\`\`\``)) { // Awesome check, huh
 				return `
-				  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atelier-plateau-dark.min.css">
+				<link rel="stylesheet" href="/assets/atom-one-light.css">
 				  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
 				  <script>hljs.initHighlightingOnLoad();</script>
 				`
