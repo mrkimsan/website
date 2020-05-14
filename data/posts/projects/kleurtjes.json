@@ -2,6 +2,7 @@
 	"state": "published",
 	"md": "kleurtjes-en_us.md",
 	"slug": "kleurtjes",
-	"image": "/assets/projects/kleurtjes.png",
+	"banner": "/assets/projects/kleurtjes.png",
+	"image": "/assets/projects/kleurtjes-banner.png",
 	"date": 1590271200000
 }

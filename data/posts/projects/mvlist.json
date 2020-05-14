@@ -2,6 +2,7 @@
 	"state": "published",
 	"md": "mvlist-en_us.md",
 	"slug": "mvlist",
-	"image": "/assets/projects/mvlist.png",
+	"banner": "/assets/projects/mvlist.png",
+	"image": "/assets/projects/mvlist-banner.png",
 	"date": 1561500000000
 }

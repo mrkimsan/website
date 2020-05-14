@@ -2,6 +2,7 @@
 	"state": "published",
 	"md": "today-en_us.md",
 	"slug": "today",
-	"image": "/assets/projects/today.png",
+	"banner": "/assets/projects/today.png",
+	"image": "/assets/projects/today-banner.png",
 	"date": 1558562400000
 }

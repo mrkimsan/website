@@ -2,6 +2,7 @@
 	"state": "published",
 	"md": "bsl-en_us.md",
 	"slug": "bsl",
-	"image": "/assets/projects/bsl-2.png",
+	"image": "/assets/projects/bsl-banner.png",
+	"banner": "/assets/projects/bsl-2.png",
 	"date": 1546709331283
 }
