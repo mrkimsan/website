@@ -1,5 +1,6 @@
 const showdown = require("showdown");
-const showdownConverter = new showdown.Converter;
+showdown.setFlavor("github");
+const showdownConverter = new showdown.Converter();
 const routers = require("./routers");
 const express = require("express");
 const handlebars = require("express-handlebars");
