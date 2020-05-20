@@ -5,11 +5,13 @@
 	{{{getHighlightJs post.body.md}}}
 
 	<div class="postMain">
+		
 		{{#if post.image}}
 		<div class="postImage">
-			<img src="{{ post.banner }}" alt="Big hero image">
+			<img src="{{#if post.banner}}{{ post.banner }}{{else}}{{ post.image }}{{/if}}" alt="Big hero image">
 		</div>
 		{{/if}}
+
 		<div class="postContent subContent">
 			{{{toHTML post.body.md}}}
 		</div>
