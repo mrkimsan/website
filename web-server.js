@@ -10,7 +10,11 @@ app.engine("handlebars", handlebars({
 	defaultLayout: "main",
 	helpers: {
 		toSlug: str => encodeURIComponent(str.replace(/ /g, "-")),
-		toHTML: str => showdownConverter.makeHtml(str).replace(/<a/, `<a target="_blank"`),
+		toHTML: str => {
+			let html = showdownConverter.makeHtml(str);
+			html = html.replace(/<a/g, `<a target="_blank"`)
+			return html;
+		},
 		getHighlightJs: body => {
 			if(body.includes(`\`\`\``)) { // Awesome check, huh
 				return `
@@ -30,7 +34,9 @@ app.use("/", routers.posts);
 app.use("/", routers.projects);
 app.use("/icon-gen", routers.iconGen);
 
+
 app.use(express.static("public"));
 
+app.use("*", routers.notFound);
 
 module.exports = app;

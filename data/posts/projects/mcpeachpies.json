@@ -2,8 +2,8 @@
 	"state": "published",
 	"md": "mcpeachpies-en_us.md",
 	"slug": "mcpeachpies",
-	"banner": "https://yt3.ggpht.com/p6gshfJXt4CUjdRvQRBrVrULHKELMxy5mwWQkLcBN6HiLoVCkaXBjF8_dheky2JjYbzDBmYnNg=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj",
+	"banner": "/assets/projects/mcpeachpies-banner.jpg",
 	"image": "/assets/project-cards/peach-icon.png",
-	"imageBackground": "url(https://yt3.ggpht.com/p6gshfJXt4CUjdRvQRBrVrULHKELMxy5mwWQkLcBN6HiLoVCkaXBjF8_dheky2JjYbzDBmYnNg=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj); background-size: cover; background-position: center;",
+	"imageBackground": "url(/assets/projects/mcpeachpies-banner.jpg); background-size: cover; background-position: center;",
 	"date": 1596015837166
 }

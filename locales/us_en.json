@@ -10,5 +10,8 @@
 		"recent": "Recent projects",
 		"showAll": "Show all projects",
 		"recentOther": "More recent projects"
+	},
+	"not-found": {
+		"not-found": "Page not found"
 	}
 }

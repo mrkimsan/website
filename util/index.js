@@ -39,11 +39,26 @@ module.exports.getPosts = (category = "blog") => {
 				  .slice(0, 300)	
 			};
 			file.title = bodyMd.split("\n")[0].replace(/#/g, "").trim();
+			file.pinnedStatus = !!file.pinned ? 1 : -1;
 			posts.push(file);
 		}
 	}
 
-	posts = posts.sort((a, b) => b.date - a.date);
+	console.log(posts.map(v => ({
+		pinnedStatus: v.pinnedStatus,
+		date: v.date,
+		slug: v.slug
+	})));
+
+	posts = posts.sort((a, b) => b.date - a.date).sort((a, b) => b.pinnedStatus - a.pinnedStatus);
+
+	console.log(posts.map(v => ({
+		pinnedStatus: v.pinnedStatus,
+		date: v.date,
+		slug: v.slug
+	})));
+
+	console.log("_".repeat(100))
 
 	return posts;
 

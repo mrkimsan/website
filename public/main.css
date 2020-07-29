@@ -204,9 +204,18 @@ header .title a {
 .post .postContent .postLink {
 	text-decoration: none;
 	color: inherit;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 .post .postContent .postLink:hover {
 	text-decoration: underline;
+}
+.post .postContent .postLink svg {
+	width: 1.2em;
+	height: 1.2em;
+	margin-right: 8px;
+	color: var(--theme);
 }
 .post .postContent .postPreview {
 	margin: 0;

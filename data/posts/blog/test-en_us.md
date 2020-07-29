@@ -4,6 +4,24 @@ Lorem ipsum dolor sit amet consectetur adipiscing elit aenean maecenas phasellus
 
 Auctor ultrices nostra cum fermentum conubia massa eros euismod, rutrum neque odio sagittis fusce quis ridiculus porta, lacus posuere dictumst sapien metus mollis ac. Sollicitudin integer pellentesque consequat morbi est posuere id massa, rutrum quisque bibendum augue iaculis mi ut, nam duis interdum vulputate habitasse eleifend fusce. Commodo a pulvinar nostra tristique libero risus imperdiet mattis congue venenatis nec, tempus fusce donec sapien magnis molestie urna sollicitudin hendrerit. Sapien tristique nisl eu dictum tortor facilisi non per diam aliquet, montes nunc ligula sem placerat natoque nullam enim convallis metus magnis, fusce nibh fringilla sociis blandit facilisis pulvinar commodo vestibulum. Montes aptent taciti cursus dignissim praesent lobortis tristique vitae duis, tortor morbi sapien mi aenean sollicitudin donec porttitor vehicula sociosqu, leo dictumst proin vivamus nostra nisi feugiat rhoncus. Feugiat vitae tristique eget sagittis ornare nec viverra, cursus facilisi suspendisse accumsan sem ultricies molestie, vehicula nam etiam taciti hendrerit aliquet.
 
+```html
+<div class="post">
+	{{#if image}}
+	<div class="postTop" style="background: {{imageBackground}}; background-clip: padding-box;">
+		<img src="{{ image }}" alt="blog image" {{#if padImage}}class="fullImage"{{/if}}>
+	</div>
+	{{/if}}
+	<div class="postContent">
+		<h3 class="postTitle">
+			<a class="postLink" href="/{{toSlug slug}}">{{ title }}</a>
+		</h3>
+		<p class="postPreview">
+			{{ body.short }}
+		</p>
+	</div> 
+</div>
+```
+
 Aliquam suspendisse semper sem mattis potenti ridiculus lacus cum maecenas, primis suscipit nec feugiat praesent dictumst eleifend euismod eget curae, dui justo varius orci cubilia gravida commodo quisque. Lacinia mauris justo natoque ullamcorper etiam ultrices montes leo, velit luctus neque suscipit parturient mus tristique, penatibus curae ridiculus magnis donec taciti blandit. Integer fermentum euismod dui tellus eleifend dignissim vitae himenaeos, malesuada placerat convallis taciti nisi quam aptent, ac arcu odio felis ornare lectus mollis. Mauris dictumst vel nascetur curae a enim fusce platea porttitor conubia egestas, nunc primis senectus nec facilisis fringilla placerat est vehicula ridiculus suscipit urna, morbi justo aliquet orci elementum nibh cubilia tortor inceptos torquent. Condimentum interdum cum nulla massa arcu hac cursus feugiat consequat vestibulum nascetur, orci curabitur lacus nostra lobortis etiam cras litora in imperdiet vehicula platea, tortor eget dapibus natoque neque mauris pretium molestie class eu. Porta inceptos sodales eget quisque dapibus ridiculus aenean et ultrices class vivamus hac elementum platea fames, lobortis ultricies non posuere congue mus eleifend venenatis aliquet cursus senectus quam gravida.
 
 Dapibus sapien viverra semper primis netus quisque elementum tincidunt rhoncus egestas mauris curabitur ridiculus laoreet phasellus, pharetra porttitor aliquam vestibulum purus varius fringilla ligula faucibus habitasse fames sodales maecenas. Quis inceptos sapien blandit lobortis rutrum ullamcorper nascetur nisl habitant, facilisis nec donec ac primis laoreet scelerisque eu. Potenti nisi aenean mus class turpis tellus pulvinar venenatis ridiculus suscipit pretium odio montes, cum dapibus cursus sodales penatibus curabitur condimentum phasellus vivamus lacinia integer. Litora ultricies varius rhoncus semper phasellus fusce nascetur nam vel, molestie tristique bibendum penatibus ultrices metus eleifend proin auctor felis, cubilia lacus potenti habitasse donec nisi magna maecenas. Ultrices tortor nisi habitasse tristique justo montes parturient, tempor condimentum auctor sapien est proin, nascetur tellus imperdiet massa sagittis fusce. Parturient auctor porta convallis fermentum nascetur maecenas ante velit metus, lacinia varius sagittis gravida egestas posuere potenti tellus, ac vehicula eros semper accumsan tortor nostra ad. Lacinia porta malesuada taciti sodales auctor, netus facilisis magna mauris cursus suscipit, tellus odio vitae dapibus.
