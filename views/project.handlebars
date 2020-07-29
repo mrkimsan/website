@@ -7,7 +7,7 @@
 	<div class="postMain">
 		{{#if project.image}}
 		<div class="postImage">
-			<img src="{{ project.image }}" alt="Big hero image">
+			<img src="{{#if project.banner}}{{ project.banner }}{{else}}{{ project.image }}{{/if}}" alt="Big hero image">
 		</div>
 		{{/if}}
 		<div class="postContent subContent">
