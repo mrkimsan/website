@@ -1,6 +1,6 @@
 <div class="post">
 	{{#if image}}
-	<div class="postTop" style="background: {{imageBackground}}">
+	<div class="postTop" style="background: {{imageBackground}}; background-clip: padding-box;">
 		<img src="{{ image }}" alt="blog image" {{#if padImage}}class="fullImage"{{/if}}>
 	</div>
 	{{/if}}
