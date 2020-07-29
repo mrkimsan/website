@@ -138,12 +138,12 @@ header .title a {
 	margin-top: 40px;
 	display: grid;
 	grid-template-columns: 100%;
-	grid-gap: 20px;
+	grid-gap: 40px;
 }
 
 .section > .title {
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 .section > .title.spread {
 	display: flex;
@@ -163,7 +163,7 @@ header .title a {
 }
 .posts {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	grid-gap: 20px;
 }
 .posts.oneRow {
@@ -181,6 +181,7 @@ header .title a {
 	border-radius: 6px;
 	object-fit: cover;
 	border: 1px solid var(--border);
+	display: block;
 }
 .post .postContent {
 	margin-top: 5px;
