@@ -2,7 +2,7 @@
 	"state": "published",
 	"md": "about-me-en_us.md",
 	"slug": "about",
-	"banner": "https://dcist.com/wp-content/uploads/sites/3/2020/02/wilford_newsletter-1024x768.jpg",
+	"banner": "/assets/projects/about-me.png",
 	"image": "/assets/icon.png",
 	"imageBackground": "url(https://i.pinimg.com/originals/e3/a9/1f/e3a91fc52e894ddb8c1a824f7d9b7367.png); background-position: center; background-size: cover;",
 	"date": 1596046227175,
