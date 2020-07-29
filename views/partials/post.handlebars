@@ -1,7 +1,7 @@
 <div class="post">
 	{{#if image}}
 	<div class="postTop" style="background: {{imageBackground}}">
-		<img src="{{ image }}" alt="blog image">
+		<img src="{{ image }}" alt="blog image" {{#if padImage}}class="fullImage"{{/if}}>
 	</div>
 	{{/if}}
 	<div class="postContent">
