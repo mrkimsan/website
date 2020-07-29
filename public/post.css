@@ -72,8 +72,11 @@ table th, table td {
 .postContent a {
 	color: var(--theme);
 	font-weight: 800;
+	text-decoration: none;
 }
-
+.postContent a:hover {
+	text-decoration: underline;
+}
 @media (prefers-color-scheme: dark) {
 	code.hljs {
 		filter: invert(1);
