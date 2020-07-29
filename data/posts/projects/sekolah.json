@@ -3,6 +3,7 @@
 	"md": "sekolah-en_us.md",
 	"slug": "sekolah",
 	"banner": "/assets/projects/sekolah.png",
-	"image": "/assets/projects/sekolah-banner.png",
+	"image": "/assets/project-cards/sekolah-icon.png",
+	"imageBackground": "#00ac8c",
 	"date": 1558908000000
 }

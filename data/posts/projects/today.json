@@ -3,6 +3,7 @@
 	"md": "today-en_us.md",
 	"slug": "today",
 	"banner": "/assets/projects/today.png",
-	"image": "/assets/projects/today-banner.png",
+	"image": "/assets/project-cards/today-icon.png",
+	"imageBackground": "#00B77A",
 	"date": 1558562400000
 }

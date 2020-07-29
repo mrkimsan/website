@@ -2,7 +2,8 @@
 	"state": "published",
 	"md": "bsl-en_us.md",
 	"slug": "bsl",
-	"image": "/assets/projects/bsl-banner2.png",
+	"image": "/assets/project-cards/bsl-icon.png",
+	"imageBackground": "#445396",
 	"banner": "/assets/projects/bsl-2.png",
 	"date": 1546709331283
 }

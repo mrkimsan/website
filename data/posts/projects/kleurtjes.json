@@ -3,6 +3,7 @@
 	"md": "kleurtjes-en_us.md",
 	"slug": "kleurtjes",
 	"banner": "/assets/projects/kleurtjes.png",
-	"image": "/assets/projects/kleurtjes-banner.png",
+	"image": "/empty.png",
+	"imageBackground": "#3d6a7b",
 	"date": 1590271200000
 }

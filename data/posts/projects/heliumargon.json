@@ -3,6 +3,7 @@
 	"md": "heliumargon-en_us.md",
 	"slug": "heliumargon",
 	"banner": "/assets/projects/heliumargon-large.png",
-	"image": "/assets/projects/heliumargon-banner.png",
+	"image": "/assets/project-cards/heliumargon-logo.png",
+	"imageBackground": "linear-gradient(to right, #EC008C)",
 	"date": 1596015837166
 }

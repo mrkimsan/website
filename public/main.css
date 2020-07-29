@@ -174,13 +174,17 @@ header .title a {
 }
 .post .postTop {
 	width: 100%;
-}
-.post .postTop img {
-	width: calc(100% - 2px);
 	height: 150px;
 	border-radius: 6px;
-	object-fit: cover;
 	border: 1px solid var(--border);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.post .postTop img {
+	height: 75px;
+	max-width: 75px;
+	object-fit: contain;
 	display: block;
 }
 .post .postContent {
