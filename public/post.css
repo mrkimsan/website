@@ -19,6 +19,7 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	
 }
 
 .postContent h1 {
@@ -33,12 +34,13 @@
 	margin: 20px 0;
 	width: 110%;
 	margin-left: -5%;
+	border: 1px solid var(--border);
+	border-radius: 6px;
 }
 
 /* Code */
 code {
 	width: 100%;
-	border-box: box-sizing;
 	padding: 10px;
 	background: #f5f7f9;
 	border-radius: 6px;

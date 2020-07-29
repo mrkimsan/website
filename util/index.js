@@ -44,21 +44,7 @@ module.exports.getPosts = (category = "blog") => {
 		}
 	}
 
-	console.log(posts.map(v => ({
-		pinnedStatus: v.pinnedStatus,
-		date: v.date,
-		slug: v.slug
-	})));
-
 	posts = posts.sort((a, b) => b.date - a.date).sort((a, b) => b.pinnedStatus - a.pinnedStatus);
-
-	console.log(posts.map(v => ({
-		pinnedStatus: v.pinnedStatus,
-		date: v.date,
-		slug: v.slug
-	})));
-
-	console.log("_".repeat(100))
 
 	return posts;
 
