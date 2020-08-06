@@ -1,4 +1,5 @@
 <div class="bodyWrapper content">
+	{{#if posts}}
 	<div class="section postsSection">
 		<h2 class="title spread">
 			<span class="mainTitle">{{ locale.posts.recent }}</span>
@@ -9,8 +10,8 @@
 			{{> post}}
 			{{/each}}
 		</div>
-		
 	</div>
+	{{/if}}
 	<div class="section projectSection">
 		<h2 class="title spread">
 			<span class="mainTitle">{{ locale.projects.recent }}</span>
