@@ -1,5 +1,5 @@
 
 const app = require("./web-server");
-app.listen(80, () => {
-	console.log("Now live on port 80!");
+app.listen(8010, () => {
+	console.log("Now live on port 8010!");
 });
