@@ -25,7 +25,6 @@ body {
 	background: var(--body);
 	color: var(--text);
 	font-family: Poppins, Arial, Helvetica, sans-serif;
-	padding-bottom: calc(100px + env(safe-area-inset-bottom));
 }
 
 header {
@@ -221,6 +220,41 @@ header .title a {
 	-webkit-box-orient: vertical;  
 	overflow: hidden;
 	color: var(--textSecondary);
+}
+
+
+footer {
+	box-sizing: border-box;
+	margin-top: 100px;
+	width: 100%;
+	padding: 30px;
+	padding-bottom: calc(30px + env(safe-area-inset-bottom));
+	background: var(--border);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.footer-section {
+	width: 200px;
+	margin-bottom: 50px;
+}
+.footer-section h3 {
+	margin-top: 0;
+}
+
+footer ul {
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	list-style-type: none;
+}
+footer a {
+	text-decoration: none;
+	color: inherit;
+}
+footer a:hover {
+	text-decoration: underline
 }
 
 
