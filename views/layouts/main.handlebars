@@ -34,9 +34,11 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			{{> header}}
-			{{#if showHero}}{{> hero}}{{/if}}
-			{{{ body }}}
+			<div class="content-wrapper">
+				{{> header}}
+				{{#if showHero}}{{> hero}}{{/if}}
+				{{{ body }}}
+			</div>
 			{{> footer}}
 		</div>
 	</body>
