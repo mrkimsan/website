@@ -12,7 +12,7 @@ The site also has some useful redirects in place. The default URL for a profile 
 
 This project is built using Node.js, with MongoDB as a database. Express is used as the web server, using express-handlebars as the view engine.
 
-The project is also available on [GitHub](https://github.com/jipfr/colors-new). The site is also available at [kleurtj.es](https://kleurtj.es/jip)
+The project's source code is available on [GitHub](https://github.com/jipfr/colors-new), with a live version of the project at [kleurtj.es](https://kleurtj.es/jip)
 
 ![Jip's dashboard](/assets/projects/kleurtjes.png)
 ![Marijn's dashboard](/assets/projects/kleurtjes-3.png)
