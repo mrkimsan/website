@@ -5,5 +5,6 @@
 	"banner": "/assets/projects/mvlist.png",
 	"image": "https://mvlist.jipfr.nl/icon-big.png",
 	"imageBackground": "#d04040",
-	"date": 1561500000000
+	"date": 1561500000000,
+	"summary": "mvlist provides an easy way to keep track and rate movies you love (or hate)."
 }

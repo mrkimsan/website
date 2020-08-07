@@ -5,5 +5,6 @@
 	"banner": "/assets/projects/today.png",
 	"image": "/assets/project-cards/dash-icon.png",
 	"imageBackground": "linear-gradient(to top right, #00B780, #0AD99A)",
-	"date": 1558562400000
+	"date": 1558562400000,
+	"summary": "Dash is a Tweetdeck-like client for Makerlog, a platform to track your progress."
 }

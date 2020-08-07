@@ -5,5 +5,6 @@
 	"banner": "/assets/projects/sekolah.png",
 	"image": "/assets/project-cards/sekolah-icon.png",
 	"imageBackground": "#00ac8c",
-	"date": 1558908000000
+	"date": 1558908000000,
+	"summary": "Sekolah was built to show a school schedule and grades."
 }

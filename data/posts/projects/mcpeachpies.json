@@ -5,5 +5,6 @@
 	"banner": "/assets/projects/mcpeachpies-banner.jpg",
 	"image": "/assets/project-cards/peach-icon.png",
 	"imageBackground": "url(/assets/projects/mcpeachpies-banner.jpg); background-size: cover; background-position: center;",
-	"date": 1596015837166
+	"date": 1596015837166,
+	"summary": "mcpeachpies' website. mcpeachpies makes Minecraft YouTube videos in addition to data-packs and resource packs."
 }

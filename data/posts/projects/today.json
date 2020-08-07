@@ -5,5 +5,6 @@
 	"banner": "/assets/projects/today.png",
 	"image": "/assets/project-cards/today-icon.png",
 	"imageBackground": "#00B77A",
-	"date": 1558562400000
+	"date": 1558562400000,
+	"summary": "Today is a no-distraction logger for Makerlog, a platform to track your progress."
 }

@@ -5,5 +5,6 @@
 	"image": "/assets/project-cards/bsl-icon.png",
 	"imageBackground": "#445396",
 	"banner": "/assets/projects/bsl-2.png",
-	"date": 1546709331283
+	"date": 1546709331283,
+	"summary": "BSL is an easy to use grocery list that features intelligent suggestions as well as synchronisation between all your family members!"
 }
