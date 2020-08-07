@@ -201,14 +201,11 @@ header .title a {
 .post .postContent .postTitle {
 	margin: 0;
 }
-.post .postContent .postLink {
+.postLink {
 	text-decoration: none;
 	color: inherit;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 }
-.post .postContent .postLink:hover {
+.postLink:hover .postTitle {
 	text-decoration: underline;
 }
 .post .postContent .postLink svg {
