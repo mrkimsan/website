@@ -15,7 +15,7 @@
 			</span>
 		</h3>
 		<p class="postPreview">
-			{{ body.short }}
+			{{#if summary}}{{summary}}{{else}}{{ body.short }}{{/if}}
 		</p>
 	</div> 
 	</a>
