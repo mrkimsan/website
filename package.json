@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "init": "npm install",
-    "run": "node ."
+    "start": "node ."
   },
   "author": "Jip Frijlink",
   "license": "ISC",

@@ -7,6 +7,7 @@
 	--border: rgba(0, 0, 0, 0.1);
 	--theme: #457461;
 	--themeDark: #3E6857;
+	--footer: var(--border);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +18,7 @@
 		--border: #4c4c4c;
 		--theme: #8080c0;
 		--themeDark: #5d5d90;
+		--border: rgba(255, 255, 255, 0.05);
 	}
 }
 
@@ -242,7 +244,7 @@ footer {
 	width: 100%;
 	padding: 30px;
 	padding-bottom: calc(30px + env(safe-area-inset-bottom));
-	background: var(--border);
+	background: var(--footer);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
