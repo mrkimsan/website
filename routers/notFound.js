@@ -7,7 +7,8 @@ router.get("/", (req, res) => {
 	let locale = getLocale("us", "en");
 	res.render("not-found", {
 		showHero: true,
-		locale
+		locale,
+		title: "Page not found"
 	});
 });
 

@@ -14,7 +14,8 @@ router.get("/posts", (req, res) => {
 	res.render("posts", {
 		locale,
 		posts,
-		showHero: false
+		showHero: false,
+		title: "Posts"
 	});
 });
 
@@ -29,7 +30,8 @@ router.get("/:slug", (req, res, next) => {
 			locale,
 			post,
 			posts: posts.filter(s => s.slug !== post.slug).slice(0, 3),
-			showHero: false
+			showHero: false,
+			title: post.title
 		});
 	} else {
 		next();

@@ -14,7 +14,8 @@ router.get("/projects", (req, res) => {
 	res.render("projects", {
 		locale,
 		projects,
-		showHero: false
+		showHero: false,
+		title: "Projects"
 	});
 });
 
@@ -29,7 +30,8 @@ router.get("/:slug", (req, res, next) => {
 			locale,
 			project,
 			projects: projects.filter(s => s.slug !== project.slug).slice(0, 3),
-			showHero: false
+			showHero: false,
+			title: project.title
 		});
 	} else {
 		next();
