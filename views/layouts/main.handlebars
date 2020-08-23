@@ -18,19 +18,26 @@
 		<meta name="description" content="De enige echte persoonlijke website van Jip Frijlink">
 		<meta name="keywords" content="Jip, Frijlink, Jip Frijlink, Jip Fr, Fr, Sekolah, BSL, Today for Makerlog, Today, mvlist">
 		
+		{{#if banner}}
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="og:image" content="{{genSocialImg banner}}">
+		<meta name="twitter:image:src" content="{{genSocialImg banner}}">
+		{{else}}
+		<meta name="twitter:card" content="summary">
+		<meta name="og:image" content="/assets/icon.png">
+		<meta name="twitter:image:src" content="https://jipfr.nl/icon.png">
+		{{/if}}
+
 		<!-- OpenGraph stuff -->
 		<meta name="og:description" content="De enige echte persoonlijke website van Jip Frijlink">
-		<meta name="og:title" content="Jip Frijlink">
-		<meta name="og:image" content="/assets/icon.png">
+		<meta name="og:title" content="{{#if title}}{{ title }} - {{/if}}Jip Frijlink">
 		<!-- Viewport -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
 		<!-- Twitter stuff -->
-		<meta name="twitter:card" content="summary">
 		<meta name="twitter:site" content="@jipfr">
 		<meta name="twitter:creator" content="@jipfr">
-		<meta name="twitter:title" content="Jip Frijlink">
+		<meta name="twitter:title" content="{{#if title}}{{ title }} - {{/if}}Jip Frijlink">
 		<meta name="twitter:description" content="De enige echte persoonlijke website van Jip Frijlink">
-		<meta name="twitter:image:src" content="https://jipfr.nl/icon.png">
 	</head>
 	<body>
 		<div class="wrapper">

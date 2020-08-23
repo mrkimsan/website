@@ -31,7 +31,8 @@ router.get("/:slug", (req, res, next) => {
 			project,
 			projects: projects.filter(s => s.slug !== project.slug).slice(0, 3),
 			showHero: false,
-			title: project.title
+			title: project.title,
+			banner: project.banner || null
 		});
 	} else {
 		next();

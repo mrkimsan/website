@@ -24,6 +24,9 @@ app.engine("handlebars", handlebars({
 				`
 			}
 			return "";
+		},
+		genSocialImg: url => {
+			return url.startsWith("http") ? url : `https://jipfr.nl${url}`;
 		}
 	}
 }));
