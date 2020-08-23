@@ -36,6 +36,8 @@ app.use("/icon-gen", routers.iconGen);
 
 
 app.use(express.static("public"));
+app.use(express.static("../jipfr.nl/"))
+
 
 app.use("*", routers.notFound);
 
