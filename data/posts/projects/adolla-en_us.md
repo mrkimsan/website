@@ -2,7 +2,7 @@
 
 Adolla is a web app I built to read manga. I was told there weren't any decent ones that worked for iOS, so I built it myself.
 
-The project features progress tracking, lists, backups, a customizable reader, search, proper iOS standalone support, Telegram integration for new chapteers, and it is also a PWA.
+The project features progress tracking, lists, backups, a customizable reader, search, proper iOS standalone support, Telegram integration for new chapters, and it is also a PWA.
 
 The project is made with Node on the back-end with Handlebars as the templating engine. 
 
