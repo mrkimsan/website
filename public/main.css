@@ -237,6 +237,11 @@ header .title a {
 	color: var(--textSecondary);
 }
 
+.postLink[href="/adolla"] .postTop img {
+	/* Some nice post-specific hacks. */
+	filter: saturate(0) brightness(1.5);
+}
+
 
 footer {
 	box-sizing: border-box;
