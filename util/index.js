@@ -36,7 +36,7 @@ module.exports.getPosts = (category = "blog") => {
 				  .replace(/#/g, "")
 				  .replace(/\.\./g, ".")
 				  .replace(/\!\./g, "!")
-				  .slice(0, 300)	
+				  .slice(0, 300)
 			};
 			file.title = bodyMd.split("\n")[0].replace(/#/g, "").trim();
 			file.pinnedStatus = !!file.pinned ? 1 : -1;

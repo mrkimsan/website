@@ -12,7 +12,7 @@ app.engine("handlebars", handlebars({
 		toSlug: str => encodeURIComponent(str.replace(/ /g, "-")),
 		toHTML: str => {
 			let html = showdownConverter.makeHtml(str);
-			html = html.replace(/<a/g, `<a target="_blank"`)
+			html = html.replace(/<a/g, `<a target="_blank"`).replace(/<img/g, `<img loading="lazy"`);
 			return html;
 		},
 		getHighlightJs: body => {
