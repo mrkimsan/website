@@ -301,4 +301,7 @@ footer a:hover {
 	.posts {
 		grid-template-columns: 100%;
 	}
+	.footer-section {
+		width: 100%;
+	}
 }
