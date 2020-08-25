@@ -180,6 +180,15 @@ header .title a {
 	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 	grid-gap: 20px;
 }
+.posts.igPosts {
+	grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+}
+.posts .instagramImage {
+	width: 100%;
+	object-fit: contain;
+	padding-bottom: 100%;
+	border-radius: 4px;
+}
 .posts.oneRow {
 	grid-gap: 0 20px;
 	grid-template-rows: auto;
@@ -240,6 +249,13 @@ header .title a {
 .postLink[href="/adolla"] .postTop img {
 	/* Some nice post-specific hacks. */
 	filter: saturate(0) brightness(1.5);
+}
+
+
+
+.instagramPost {
+	color: inherit;
+	text-decoration: none;
 }
 
 

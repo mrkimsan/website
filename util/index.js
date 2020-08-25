@@ -49,3 +49,5 @@ module.exports.getPosts = (category = "blog") => {
 	return posts;
 
 }
+
+module.exports.getInstagram = require("./instagram").getInstagram;

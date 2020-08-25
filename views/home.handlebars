@@ -24,4 +24,18 @@
 		</div>
 		
 	</div>
+	<div class="section instagramSection">
+		<h2 class="title spread">
+			<span class="mainTitle">Instagram</span>
+			<a class="moreLink" target="_blank" href="https://instagram.com/jipprogamer2006">View profile</a>
+		</h2>
+		<div class="posts igPosts">
+			{{#each instagram}}
+			<a class="instagramPost" href="{{url}}" target="_blank">
+				<div class="instagramImage" style="background: url('{{src}}'), var(--border); background-size: contain; background-position: center; background-repeat: no-repeat;" alt="{{label}}"></div>
+			</a>
+			{{/each}}
+		</div>
+		
+	</div>
 </div>
