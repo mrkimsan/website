@@ -16,11 +16,13 @@ async function updateFeed() {
 	let igData = contentMatch ? JSON.parse(contentMatch[1].slice(0, -1)) : null;
 
 	// console.log(igData);
-	if(!(igData?.entry_data?.ProfilePage[0] && igData?.entry_data?.ProfilePage[0]?.graphql?.user?.edge_owner_to_timeline_media?.edges)) {
+	let posts;
+	try {
+		posts = igData.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
+	} catch(err) {
 		console.log(igData);
-		return;
 	}
-	let posts = igData.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
+	
 	
 	posts = posts.map(post => {
 		let { display_url, edge_liked_by, accessibility_caption, shortcode, edge_media_to_caption } = post.node;
