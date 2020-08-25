@@ -20,7 +20,7 @@ async function updateFeed() {
 	try {
 		posts = igData.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
 	} catch(err) {
-		console.log(igData);
+		console.error("Failed to fetch Instagram date");
 	}
 	
 	
