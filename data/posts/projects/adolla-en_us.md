@@ -8,11 +8,11 @@ The project is made with Node on the back-end with Handlebars as the templating 
 
 The source code and instructions for getting the project up and running are available [here](https://github.com/JipFr/Adolla).
 
-![Image of the home page](https://raw.githubusercontent.com/JipFr/manga-5/dev/screenshot/0.png)
-![Lists page](https://raw.githubusercontent.com/JipFr/manga-5/dev/screenshot/1.png)
-![Backups page](https://raw.githubusercontent.com/JipFr/manga-5/dev/screenshot/2.png)
-![Manga page](https://raw.githubusercontent.com/JipFr/manga-5/dev/screenshot/3.png)
-![Reader page](https://raw.githubusercontent.com/JipFr/manga-5/dev/screenshot/4.png)
-![Reader with overlay](https://raw.githubusercontent.com/JipFr/manga-5/dev/screenshot/5.png)
-![Mobile](https://raw.githubusercontent.com/JipFr/manga-5/dev/screenshot/mobile_0.png)
-![Mobile, dark](https://raw.githubusercontent.com/JipFr/manga-5/dev/screenshot/mobile_1.png)
+![Image of the home page](https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/0.png)
+![Lists page](https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/1.png)
+![Backups page](https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/2.png)
+![Manga page](https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/3.png)
+![Reader page](https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/4.png)
+![Reader with overlay](https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/5.png)
+![Mobile](https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/mobile_0.png)
+![Mobile, dark](https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/mobile_1.png)
