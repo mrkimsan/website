@@ -16,6 +16,7 @@ async function updateFeed() {
 	let igData = contentMatch ? JSON.parse(contentMatch[1].slice(0, -1)) : null;
 
 	// console.log(igData);
+	if(!igData?.entry_data?.ProfilePage[0]?.graphql?.user?.edge_owner_to_timeline_media?.edges) return;
 	let posts = igData.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
 	
 	posts = posts.map(post => {
