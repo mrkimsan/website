@@ -13,7 +13,7 @@ Auctor ultrices nostra cum fermentum conubia massa eros euismod, rutrum neque od
 	{{/if}}
 	<div class="postContent">
 		<h3 class="postTitle">
-			<a class="postLink" href="/{{toSlug slug}}">{{ title }}</a>
+			{{ title }}
 		</h3>
 		<p class="postPreview">
 			{{ body.short }}

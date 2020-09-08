@@ -1,4 +1,7 @@
 {
+	"about": {
+		"title": "About me"
+	},
 	"posts": {
 		"title": "Posts",
 		"recent": "Recent posts",

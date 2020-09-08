@@ -73,11 +73,6 @@ header nav a:hover {
 	opacity: 1;
 }
 
-.content {
-	width: calc(100% - 90px);
-	max-width: 1300px;
-	margin: 0 auto;
-}
 .subContent {
 	width: 100%;
 	max-width: 40rem;
@@ -148,13 +143,84 @@ header .title a {
 	text-decoration: underline;
 }
 
-.bodyWrapper {
+.layoutWrapper, header .content {
+	width: calc(100% - 90px);
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.layoutWrapper {
 	margin-top: 40px;
+}
+.layoutWrapper.hasAside {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-gap: 40px;
+}
+.bodyWrapper {
 	display: grid;
 	grid-template-columns: 100%;
 	grid-gap: 40px;
 }
 
+/* New hero */
+.newHero {
+	position: sticky;
+	top: 20px;
+}
+.newHero .profile .photo {
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+}
+
+.newHero .socials {
+	margin-top: 20px;
+}
+.newHero .social {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-gap: 10px;
+	text-decoration: none;
+	color: inherit;
+	padding: 0 15px;
+	margin: 0 -15px;
+	border-radius: 4px;
+	align-items: center;
+}
+.newHero .socials > * + * {
+	margin-top: 10px;
+}
+.newHero .social:hover {
+	background: var(--border);
+}
+.newHero .social svg {
+	width: 24px;
+	height: 24px;
+	display: block;
+	padding: 10px;
+	border-radius: 4px;
+	background: var(--border);
+}
+.newHero .social[data-social="twitter"] svg {
+	background: #00acee;
+	color: white;
+}
+.newHero .social[data-social="dribbble"] svg {
+	background: #ea4c89;
+	color: white;
+}
+.newHero .social[data-social="github"] svg {
+	background: #211F1F;
+	color: white;
+}
+
+
+/* Sections or something */
+.paragraph {
+	color: var(--textSecondary);
+}
 .section > .title {
 	margin: 0;
 	margin-bottom: 15px;
@@ -177,7 +243,8 @@ header .title a {
 }
 .posts {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	/* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+	grid-template-columns: 100%;
 	grid-gap: 20px;
 }
 .posts.igPosts {
@@ -218,15 +285,16 @@ header .title a {
 	max-width: 100%;
 	object-fit: cover;
 }
-.post .postContent {
-	margin-top: 7px;
-}
 .post .postContent .postTitle {
 	margin: 0;
 }
 .postLink {
 	text-decoration: none;
 	color: inherit;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	grid-gap: 20px;
+	align-items: center;
 }
 .postLink:hover .postTitle {
 	text-decoration: underline;
@@ -295,9 +363,35 @@ footer a:hover {
 
 
 @media screen and (max-width: 700px) {
-	.content {
+	.layoutWrapper, header .content {
 		width: calc(100% - 40px);
 	}
+	.layoutWrapper.hasAside {
+		grid-template-columns: 100%;
+	}
+	.newHero .profile .photo {
+		width: 50%;
+	}
+	
+	/* Post card */
+	.postLink {
+		grid-template-columns: 70px 1fr;
+	}
+	.post .postTop {
+		height: 70px;
+	}
+	.post .postTop img {
+		max-width: 40px;
+		height: 40px;
+	}
+
+	/* Instagram */
+	.posts.igPosts {
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+	}
+
+	/* Old hero */
 	.hero {
 		padding: 40px 0;
 		background: var(--theme);
@@ -319,6 +413,8 @@ footer a:hover {
 	.hero .socialWrapper {
 		display: grid;
 	}
+
+	/* Posts */
 	.posts {
 		grid-template-columns: 100%;
 	}
