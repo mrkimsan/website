@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
 	body {
-		--body: #191919;
+		--body: #141415;
 		--text: white;
 		--textSecondary: #b5b5b5;
 		--border: #4c4c4c;
@@ -184,8 +184,6 @@ header .title a {
 	grid-gap: 10px;
 	text-decoration: none;
 	color: inherit;
-	padding: 0 15px;
-	margin: 0 -15px;
 	border-radius: 4px;
 	align-items: center;
 }
@@ -245,10 +243,18 @@ header .title a {
 	display: grid;
 	/* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
 	grid-template-columns: 100%;
-	grid-gap: 20px;
+	/* grid-gap: 20px; */
 }
 .posts.igPosts {
 	grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+	grid-gap: 20px;
+}
+
+.posts .post + .post {
+	border-top: 1px solid var(--border);
+}
+.post {
+	padding: 20px 0;
 }
 .posts .instagramImage {
 	width: 100%;
@@ -285,14 +291,31 @@ header .title a {
 	max-width: 100%;
 	object-fit: cover;
 }
+
+/* Tags (used in posts) */
+/* .post .postTags {
+	margin-bottom: 5px;
+}
+.tag {
+	padding: 2px 8px;
+	border-radius: 4px;
+	background: var(--themeTransparent);
+} */
+
+/* Post content */
 .post .postContent .postTitle {
 	margin: 0;
+}
+.post .postContent .postTitle img {
+	display: inline-block;
+	margin-right: 10px;
+	height: 1rem;
 }
 .postLink {
 	text-decoration: none;
 	color: inherit;
 	display: grid;
-	grid-template-columns: 150px 1fr;
+	/* grid-template-columns: 150px 1fr; */
 	grid-gap: 20px;
 	align-items: center;
 }
@@ -374,9 +397,6 @@ footer a:hover {
 	}
 	
 	/* Post card */
-	.postLink {
-		grid-template-columns: 70px 1fr;
-	}
 	.post .postTop {
 		height: 70px;
 	}
