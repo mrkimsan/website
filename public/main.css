@@ -315,7 +315,7 @@ header .title a {
 	text-decoration: none;
 	color: inherit;
 	display: grid;
-	/* grid-template-columns: 150px 1fr; */
+	grid-template-columns: 150px 1fr;
 	grid-gap: 20px;
 	align-items: center;
 }
