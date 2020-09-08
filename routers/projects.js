@@ -23,7 +23,7 @@ router.get("/:slug", (req, res, next) => {
 
 	let locale = getLocale("us", "en");
 	let projects = getPosts("projects");
-	let project = projects.find(p => p.slug === req.params.slug);
+	let project = projects.find(p => p.slug.toLowerCase() === req.params.slug.toLowerCase());
 
 	if(project) {
 		res.render("project", {
