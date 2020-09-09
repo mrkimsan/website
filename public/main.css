@@ -148,6 +148,9 @@ header .title a {
 	max-width: 1300px;
 	margin: 0 auto;
 }
+.layoutWrapper:not(.hasAside) {
+	max-width: 960px;
+}
 .layoutWrapper {
 	margin-top: 40px;
 }
