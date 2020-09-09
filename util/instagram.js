@@ -15,12 +15,11 @@ async function updateFeed() {
 	let contentMatch = igHTML.match(igParser);
 	let igData = contentMatch ? JSON.parse(contentMatch[1].slice(0, -1)) : null;
 
-	// console.log(igData);
 	let posts = [];
 	try {
 		posts = igData.entry_data.ProfilePage[0].graphql.user.edge_owner_to_timeline_media.edges;
 	} catch(err) {
-		console.error("Failed to fetch Instagram date");
+		console.error("Failed to fetch Instagram data");
 	}
 	
 	
