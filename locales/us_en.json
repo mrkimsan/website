@@ -1,6 +1,9 @@
 {
 	"about": {
-		"title": "About me"
+		"title": "About me",
+		"paragraphs": [
+			"I have no idea what to write about myself, I'm not very good at that."
+		]
 	},
 	"posts": {
 		"title": "Posts",
