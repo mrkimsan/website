@@ -4,7 +4,7 @@
 	"slug": "adolla",
 	"image": "https://raw.githubusercontent.com/JipFr/Adolla/master/public/icon.png",
 	"imageBackground": "linear-gradient(to top, #4babce, #6ebdda)",
-	"banner": "https://raw.githubusercontent.com/JipFr/manga-5/master/screenshot/mobile_0.png",
+	"banner": "https://raw.githubusercontent.com/JipFr/jipfr/master/screenshots/adolla/mobile_0_light.png",
 	"date": 1598181372098,
 	"summary": "Adolla is an easy-to-use web app to read manga. It features progress, a customizable reader, backups, and more."
 }
