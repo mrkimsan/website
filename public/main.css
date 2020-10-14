@@ -396,7 +396,7 @@ footer a:hover {
 		grid-template-columns: 100%;
 	}
 	.newHero .profile .photo {
-		width: 50%;
+		width: 75%;
 	}
 	
 	/* Post card */
@@ -425,8 +425,8 @@ footer a:hover {
 	/* Socials */
 	.newHero .socials {
 		display: grid;
-		grid-template-columns: 1.5fr 1fr;
-		grid-gap: 0 10px;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
 	}
 
 	/* Instagram */
