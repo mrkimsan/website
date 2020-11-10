@@ -1,0 +1,10 @@
+{
+	"state": "published",
+	"md": "designcourse-en_us.md",
+	"slug": "designcourse",
+	"image": "/assets/project-cards/designcourse-icon.svg",
+	"imageBackground": "#2C2C2C",
+	"banner": "/assets/projects/designcourse-banner.png",
+	"date": 1604358000000,
+	"summary": "DesignCourse is a YouTube channel teach you how to get better at UI/UX. This platform was built for courses, to teach you how to even better."
+}
