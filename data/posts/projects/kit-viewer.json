@@ -1,0 +1,10 @@
+{
+	"state": "published",
+	"md": "kit-viewer-en_us.md",
+	"slug": "kit-viewer",
+	"image": "/assets/project-cards/designcourse-icon.svg",
+	"imageBackground": "#375a7f",
+	"banner": "/assets/projects/kitviewer-banner.png",
+	"date": 1605018173480,
+	"summary": "PvpLegacy is a Minecraft server where you fight other players. This website is used to view \"kits\" made by other players."
+}
