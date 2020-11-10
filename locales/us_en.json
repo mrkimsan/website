@@ -1,4 +1,10 @@
 {
+	"about": {
+		"title": "About me",
+		"paragraphs": [
+			"I have no idea what to write about myself, I'm not very good at that."
+		]
+	},
 	"posts": {
 		"title": "Posts",
 		"recent": "Recent posts",
@@ -13,5 +19,6 @@
 	},
 	"not-found": {
 		"not-found": "Page not found"
-	}
+	},
+	"months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 }

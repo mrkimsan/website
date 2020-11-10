@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
 	body {
-		--body: #191919;
+		--body: #141415;
 		--text: white;
 		--textSecondary: #b5b5b5;
 		--border: #4c4c4c;
@@ -73,11 +73,6 @@ header nav a:hover {
 	opacity: 1;
 }
 
-.content {
-	width: calc(100% - 90px);
-	max-width: 1300px;
-	margin: 0 auto;
-}
 .subContent {
 	width: 100%;
 	max-width: 40rem;
@@ -148,13 +143,89 @@ header .title a {
 	text-decoration: underline;
 }
 
-.bodyWrapper {
+.layoutWrapper, header .content {
+	width: calc(100% - 90px);
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.layoutWrapper:not(.hasAside) {
+	max-width: 960px;
+}
+.layoutWrapper {
 	margin-top: 40px;
+}
+.layoutWrapper.hasAside {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-gap: 40px;
+}
+.bodyWrapper {
 	display: grid;
 	grid-template-columns: 100%;
 	grid-gap: 40px;
 }
 
+/* New hero */
+.newHero {
+	position: sticky;
+	top: 20px;
+}
+.newHero .profile .photo {
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	border: 1px solid var(--border);
+	border-radius: 4px;
+}
+
+.newHero .socials {
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.newHero .social {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 10px;
+	text-decoration: none;
+	color: inherit;
+	border-radius: 4px;
+	align-items: center;
+}
+.newHero .social:hover {
+	background: var(--border);
+}
+.newHero .social svg {
+	width: 100%;
+	height: 44px;
+	display: block;
+	padding: 10px;
+	border-radius: 4px;
+	background: var(--border);
+	box-sizing: border-box;
+}
+.newHero .social span {
+	display: none;
+}
+.newHero .social[data-social="twitter"] svg {
+	background: #00acee;
+	color: white;
+}
+.newHero .social[data-social="dribbble"] svg {
+	background: #ea4c89;
+	color: white;
+}
+.newHero .social[data-social="github"] svg {
+	background: #211F1F;
+	color: white;
+}
+
+
+/* Sections or something */
+.paragraph {
+	color: var(--textSecondary);
+}
 .section > .title {
 	margin: 0;
 	margin-bottom: 15px;
@@ -177,23 +248,28 @@ header .title a {
 }
 .posts {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-	grid-gap: 20px;
+	/* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
+	grid-template-columns: 100%;
+	/* grid-gap: 20px; */
 }
 .posts.igPosts {
 	grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+	grid-gap: 20px;
+}
+
+.posts .post + .post {
+	border-top: 1px solid var(--border);
+	padding-top: 20px;
+}
+.post {
+	padding-bottom: 20px;
+	
 }
 .posts .instagramImage {
 	width: 100%;
 	object-fit: contain;
 	padding-bottom: 100%;
 	border-radius: 4px;
-}
-.posts.oneRow {
-	grid-gap: 0 20px;
-	grid-template-rows: auto;
-	grid-auto-rows: 0;
-	overflow: hidden;
 }
 .post .postTop {
 	width: 100%;
@@ -218,15 +294,33 @@ header .title a {
 	max-width: 100%;
 	object-fit: cover;
 }
-.post .postContent {
-	margin-top: 7px;
+
+/* Tags (used in posts) */
+/* .post .postTags {
+	margin-bottom: 5px;
 }
+.tag {
+	padding: 2px 8px;
+	border-radius: 4px;
+	background: var(--themeTransparent);
+} */
+
+/* Post content */
 .post .postContent .postTitle {
 	margin: 0;
+}
+.post .postContent .postTitle img {
+	display: inline-block;
+	margin-right: 10px;
+	height: 1rem;
 }
 .postLink {
 	text-decoration: none;
 	color: inherit;
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	grid-gap: 20px;
+	align-items: center;
 }
 .postLink:hover .postTitle {
 	text-decoration: underline;
@@ -295,9 +389,53 @@ footer a:hover {
 
 
 @media screen and (max-width: 700px) {
-	.content {
+	.layoutWrapper, header .content {
 		width: calc(100% - 40px);
 	}
+	.layoutWrapper.hasAside {
+		grid-template-columns: 100%;
+	}
+	.newHero .profile .photo {
+		width: 75%;
+	}
+	
+	/* Post card */
+	.postLink {
+		grid-template-columns: 100%;
+	}
+	.post .postTop {
+		width: 70px;
+		height: 70px;
+	}
+	.posts.largeImages .post .postTop {
+		height: 150px;
+		width: 100%;
+	}
+	.post .postTop img {
+		max-width: 40px;
+		height: 40px;
+	}
+	.post .postContent .postPreview {
+		-webkit-line-clamp: 6;
+	}
+	.posts.largeImages .post .postContent .postPreview {
+		-webkit-line-clamp: 3;
+	}
+
+	/* Socials */
+	.newHero .socials {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+	}
+
+	/* Instagram */
+	.posts.igPosts {
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 10px;
+	}
+
+	/* Old hero */
 	.hero {
 		padding: 40px 0;
 		background: var(--theme);
@@ -319,6 +457,8 @@ footer a:hover {
 	.hero .socialWrapper {
 		display: grid;
 	}
+
+	/* Posts */
 	.posts {
 		grid-template-columns: 100%;
 	}

@@ -3,7 +3,7 @@
 	"md": "mvlist-en_us.md",
 	"slug": "mvlist",
 	"banner": "/assets/projects/mvlist.png",
-	"image": "https://mvlist.jipfr.nl/icon-big.png",
+	"image": "/assets/project-cards/mvlist-icon.png",
 	"imageBackground": "#d04040",
 	"date": 1561500000000,
 	"summary": "mvlist provides an easy way to keep track and rate movies you love (or hate)."

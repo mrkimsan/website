@@ -43,8 +43,15 @@
 		<div class="wrapper">
 			<div class="content-wrapper">
 				{{> header}}
-				{{#if showHero}}{{> hero}}{{/if}}
+				{{!-- {{#if showHero}}{{> hero}}{{/if}} --}}
+				<div class="layoutWrapper {{#if showHero}}hasAside{{/if}}">
+				{{#if showHero}}
+				<aside class="heroWrapper">
+					{{> newHero}}
+				</aside>
+				{{/if}}
 				{{{ body }}}
+				</div>
 			</div>
 			{{> footer}}
 		</div>
