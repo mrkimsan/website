@@ -1,4 +1,4 @@
-# Kit viewer
+# PvpLegacy Kit viewer
 
 This is a web application I built for PvpLegacy, a Minecraft server where you combat other players.
 
