@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "init": "npm install",
-    "start": "node ."
+    "start": "node .",
+    "redeploy": "git pull && docker-compose build webserver && docker-compose up webserver"
   },
   "author": "Jip Frijlink",
   "license": "ISC",

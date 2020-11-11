@@ -7,17 +7,18 @@ async function setupDB() {
 	const dbName = INFLUX_DATABASE;
 	conn = new InfluxDB({
 		host: INFLUX_HOST,
-        database: dbName,
-        username: INFLUX_USER,
-        password: INFLUX_PASS,
-        port: Number(INFLUX_PORT),
+		database: dbName,
+		username: INFLUX_USER,
+		password: INFLUX_PASS,
+		port: Number(INFLUX_PORT),
 		schema: [
 			{
 				measurement: "requests",
 				fields: {
 					path: FieldType.STRING,
-                    duration: FieldType.INTEGER,
-                    status: FieldType.INTEGER
+					duration: FieldType.INTEGER,
+					status: FieldType.INTEGER,
+					ip: FieldType.STRING
 				},
 				tags: []
 			}
@@ -37,29 +38,30 @@ async function setupDB() {
 }
 
 function requestLogger(req, res, next) {
-    const start = Date.now();
+	const start = Date.now();
 
-    res.on("finish", async () => {
-        const duration = Date.now() - start;
-        try {
-            await conn.writePoints([{
-                measurement: "requests",
-                fields: {
-                    path: req.path,
-                    duration,
-                    status: res.statusCode
-                },
-                tags: {}
-            }]);
-        } catch (err) {
-            console.error("Failed to write to database", err);
-        }
-    });
+	res.on("finish", async () => {
+		const duration = Date.now() - start;
+		try {
+			await conn.writePoints([{
+				measurement: "requests",
+				fields: {
+					path: req.path,
+					duration,
+					status: res.statusCode,
+					ip: req.ip
+				},
+				tags: {}
+			}]);
+		} catch (err) {
+			console.error("Failed to write to database", err);
+		}
+	});
 
-    next();
+	next();
 }
 
 module.exports = {
-    setupDB,
-    requestLogger
+	setupDB,
+	requestLogger
 };

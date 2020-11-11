@@ -7,6 +7,8 @@ const express = require("express");
 const handlebars = require("express-handlebars");
 const app = express();
 
+app.set("trust proxy", true);
+
 app.engine("handlebars", handlebars({
 	defaultLayout: "main",
 	helpers: {
