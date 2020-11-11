@@ -6,7 +6,7 @@
   "scripts": {
     "init": "npm install",
     "start": "node .",
-    "redeploy": "git pull && docker-compose build webserver && docker-compose up webserver"
+    "redeploy": "git pull && cd deploy && docker-compose build webserver && docker-compose up webserver && cd ../"
   },
   "author": "Jip Frijlink",
   "license": "ISC",
