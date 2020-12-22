@@ -13,8 +13,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
-    "influx": "^5.6.3",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.0",
     "showdown": "^1.9.1"
   }
 }

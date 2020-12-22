@@ -1,6 +1,5 @@
 const showdown = require("showdown");
 showdown.setFlavor("github");
-const { requestLogger } = require("./db");
 const showdownConverter = new showdown.Converter();
 const routers = require("./routers");
 const express = require("express");
@@ -35,8 +34,6 @@ app.engine("handlebars", handlebars({
 }));
 app.set("view engine", "handlebars");
 
-app.use(requestLogger);
-
 app.use("/", routers.home);
 app.use("/", routers.posts);
 app.use("/", routers.projects);
@@ -44,7 +41,7 @@ app.use("/icon-gen", routers.iconGen);
 
 
 app.use(express.static("public"));
-app.use(express.static("../jipfr.nl/"));
+app.use(express.static("../jipfr.nl/"))
 
 
 app.use("*", routers.notFound);
