@@ -1,0 +1,10 @@
+{
+	"state": "published",
+	"md": "starships-en_us.md",
+	"slug": "starships-me",
+	"image": "https://starships.me/icon.png",
+	"imageBackground": "#E3E3EC",
+	"banner": "/assets/projects/starships.png",
+	"date": 1610284178816,
+	"summary": "starships.me is my blog about starships, built with Nuxt/Vue and Sanity's headless CMS."
+}
